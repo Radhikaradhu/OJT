@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>site
+</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+</style>
+</head>
+<body>
+<section>
+	<div class="first">
+		<img src="img/academy-banner.jpg" alt="sample">
+	</div>
+	<div class="second">
+			<img src="img/logo.png" alt="sample" >
+					<h1>WE WILL SHARPEN </h1>
+					<h1>YOUR DREAM</h1>
+	</div>
+</section>
+<section>
+	<div>
+			<img src="img/whylove-img.jpg" alt="sample" class="third">
+	</div>
+</section>
+<section>
+    <div>
+            <img src="img/modulebg.jpg" alt="sample" class="module">
+</div>
+<section>
+</section>
+<section>
+<img src="img/testsbg.jpg" alt="sample" class="test">
+</section>
+<section>
+<img src="img/intrvwbg.jpg" alt="sample" class="intrw">
+</section>
+
+</body>
+</html>

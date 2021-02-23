@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		table,td{
+			border:1px solid;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="<?php echo base_url()?>main/">
+<?php
+if(isset($user_data))
+{
+	foreach ($user_data->result() as $row1)
+	 {
+		?>
+		<table>
+			<tr>
+				<td>firstname:</td>
+				<td><input type="text" name="firstname" value="<?php echo $row1->firstname;?>"></td>
+			</tr>
+			<tr>
+				<tr>
+				<td>lastname:</td>
+				<td><input type="text" name="lastname" value="<?php echo $row1->lastname;?>"></td>
+			</tr>
+			<tr>
+				<td>address:</td>
+				<td><textarea name="address"><?php echo $row1->address;?></textarea></td>
+			</tr>
+			<tr>
+				<td>district:</td>
+				<td><input type="text" name="district" value="<?php echo $row1->district;?>"></td>
+			</tr>
+			<tr>
+				<td>pincode:</td>
+				<td><input type="text" name="pincode" value="<?php echo $row1->pincode;?>"></td>
+			</tr>
+			<tr>
+				<td>phonenumber:</td>
+				<td><input type="text" name="phonenumber" value="<?php echo $row1->phonenumber;?>"></td>
+				<tr>
+				<td>dob:</td>
+				<td><input type="date" name="dob" value="<?php echo $row1->dob;?>"></td>
+			</tr>
+			</tr>
+		<tr>
+			<td>gender:</td>
+			<td><input type="radio" name="gender" value="<?php echo $row1->gender;?>"></td>
+		</tr>
+		<tr>
+				<td>highereducation:</td>
+			<td><input type="text" name="highereducation"  value="<?php echo $row1->highereducation;?>"></td>
+		</tr>
+			<tr>
+			<td>email:</td>
+			<td><input type="email" name="email" value="<?php echo $row1->email;?>"></td>
+		</tr>	
+		</table>
+		<?php
+	}
+}
+else
+{
+?>	
+<table>
+	<tr><td>firstname</td>
+		<td>lastname</td>
+		<td>address</td>
+		<td>district</td>
+		<td>pincode</td>
+		<td>phonenumber</td>
+		<td>dob</td>
+		<td>gender</td>
+		<td>highereducation</td>
+		<td>email</td>
+	</tr>
+	<?php
+	if($n->num_rows()>0)
+	{
+		foreach ($n->result() as  $row) 
+		{
+			?>
+			<tr>
+				<td><?php echo $row->firstname;?></td>
+				<td><?php echo $row->lastname;?></td>
+				<td><?php echo $row->address;?></td>
+				<td><?php echo $row->district;?></td>
+				<td><?php echo $row->pincode;?></td>
+				<td><?php echo $row->phonenumber;?></td>
+				<td><?php echo $row->dob;?></td>
+				<td><?php echo $row->gender;?></td>
+				<td><?php echo $row->highereducation;?></td>
+				<td><?php echo $row->email;?></td>
+			</tr>
+			<?php
+		}
+	}
+	else
+	{
+		?>
+		<tr>
+			<td>no data found</td>
+		</tr>
+		<?php
+	}
+}
+	?>
+</table>
+</form>
+</body>
+</html>

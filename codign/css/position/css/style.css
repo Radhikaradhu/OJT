@@ -1,0 +1,18 @@
+.r{
+height:200px;
+width:500px;
+border:1px solid;
+margin-top:50px;
+margin-left:50px;
+}
+.a{
+height:100px;
+width:100px;
+border:1px solid;
+position:relative;
+top:0px;
+left:0px;
+bottom:0px;
+right:0px;
+
+}

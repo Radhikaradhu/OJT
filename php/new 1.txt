@@ -1,0 +1,8 @@
+<?php
+fuction schoolname($name)
+{
+echo "$name <br>";
+}
+schoolname("st.johns");
+schoolname("nss hss";
+?>

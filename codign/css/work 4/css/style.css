@@ -1,0 +1,40 @@
+.frm{
+border:1px solid #5b80a4;
+margin-left:500px;
+width:450px;
+padding:20px;
+background-color:rgba(0,0,0,0.8);
+margin-top:20px;
+height:500px;
+
+}
+body
+{
+background-image:url("../img/back.jpg");
+}
+div
+{
+	
+}
+.frm input,textarea
+{
+	width:300px;
+	padding:20px;
+	margin:15px;
+	background-color:rgba(0,0,0,0.8);
+	color:white;
+	transition:.5s;
+	outline:none;
+	
+}
+.frm input:focus
+{
+	box-shadow:0px 20px 6px #5b80a4;
+}
+.frm_btm
+{
+	float:right;
+	background-color:rgba(0,0,0,0.6);
+	border-radius:30px;
+}
+	

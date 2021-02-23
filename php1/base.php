@@ -1,0 +1,11 @@
+<?php
+require_once("required.php");
+multiplyself(2);
+echo"<br>";
+require_once("required.php");
+multiplyself(6);
+echo"<br>";
+require_once("required.php");
+multiplyself(8);
+echo"<br>";
+?>
